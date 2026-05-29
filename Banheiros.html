@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <input id="inico"></input>
+    <input id="fim"></input>
+<body>
+    <script>
+        function gerarTabuadas() {
+            const inicio = parseInt(document.GetElementById("inicio").value);
+            const fim = parseInt(document.GetElementById("inicio").value);
+        }
+
+        if (IsNaN(inicio) || isNan(fim)) {
+            alert("Digite valores numéricos vàlidos.");
+            return;
+        }
+
+        if (inicio > fim) {
+            alert("Digite valores numéricos vàlidos.");
+            return;
+        }
+
+        for(let i = inicio; i <= fim; i++) {
+            let bloco = <h3>Tabuada do $</h3>;
+            for (let j = l; j <= 10; j++) {
+                bloco += '${i} x ${j} = ${ i * j}<br>';
+            }
+            bloco += "<hr>";
+            resultado.innerHTML += bloco;
+        }
+    </script>
+    
+</body>
+</html>
