@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //-------------------- 1
+        const numeros = [1, 2, 3];
+        const quadrado = numeros.map(n => n ** 2);
+        console.log(quadrado);
+
+    //-------------------- 2
+        const nomes = ['João', 'Fernanda', 'Carlos', 'Eva'];
+        const nomesmaior = nomes.filter(n => n.length >= 5);
+        console.log(nomesmaior);
+
+    //-------------------- 3
+        const precos = [10.5, 22.3, 18.4];
+        const soma = precos.reduce((acumulador, atual) => acumulador + atual, 0);
+        console.log(soma);
+
+    //-------------------- 4 (Desafio)
+    //const carrinho = [
+       // { nome: 'Camiseta', preco: 29.99 },
+       // { nome: 'Calça', preco: 89.9 },
+       // { nome: 'Meias', preco: 9.99 }
+    //];
+
+    //for (let i = 0; i < 3; i++) {
+        //const total = (carrinho[i].preco).reduce((acumulador, atual) => acumulador + atual, 0);
+    //}
+    
+    console.log(total);
+    </script>
+</body>
+</html>
